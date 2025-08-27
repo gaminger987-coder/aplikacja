@@ -191,12 +191,7 @@ body, html {
 
     </style>
   <link rel="stylesheet" href="css/dowodnowy.css">
-<script src="../../../../code.jquery.com/jquery-3.7.1.min.js"></script>
-
-<script src="js/fullscreen-check.js"></script>
-<script>
-    window.addEventListener('load', checkInstallation);
-</script>
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
   </head>
 
 <body class="">
@@ -298,7 +293,7 @@ document.getElementById("display-pesel").innerText = localStorage.getItem("pesel
         </script>
     </main>
     <section id="bottom">
-        <img src="https://sb987c4zjvju65987b.ct8.pl/dowod_files/checkmark.svg" alt="checkmark">
+        <img src="dowod_files/checkmark.png" alt="checkmark">
         <p>Dokument ważny</p>
     </section>
     <a class="buto" style="cursor: pointer; display: flex; align-items: center; padding: 40px 20px ; border-radius: 10px; background-color: white; box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);">
@@ -455,7 +450,7 @@ document.getElementById("display-pesel").innerText = localStorage.getItem("pesel
 
     
     </a>
-    <link rel="stylesheet" href="../../../../cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <a class="buto" style="cursor: pointer; display: flex; align-items: center; padding: 10px 20px; border-radius: 10px; background-color: white; box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); text-decoration: none; font-family: Arial, sans-serif;">
         <i class="fa-regular fa-trash-can" style="color: red; margin-right: 10px;"></i>
         <span style="color: red; font-size: 16px; font-weight: 550;">Usuń dokument</span>
@@ -664,18 +659,6 @@ document.getElementById("display-pesel").innerText = localStorage.getItem("pesel
         </section>
     </section>
 
-    <script>
-         document.getElementById("idSeries").textContent = localStorage.getItem("idSeries") || "Brak danych";
-
-         const expiryDate = localStorage.getItem("expiryDate");
-         document.getElementById("expiryDate").innerText = expiryDate ? formatDate(expiryDate) : "Brak danych";
-
-         const issueDate = localStorage.getItem("issueDate");
-         document.getElementById("issueDate").innerText = issueDate ? formatDate(issueDate) : "Brak danych";
-
-         document.getElementById("fathername").textContent = localStorage.getItem("fathername") || "Brak danych";
-         document.getElementById("mothername").textContent = localStorage.getItem("mothername") || "Brak danych";
-    </script>
         <section id="danedowodu" style="display: none;">
             <div id="szaro"></div>
             <section id="danedowodowe">
@@ -745,10 +728,6 @@ document.getElementById("display-pesel").innerText = localStorage.getItem("pesel
     
     <script src="dowod_files/wybor.js"></script>
     <script src="dowod_files/scale.js"></script>
-
-    <script>
-        document.addEventListener('DOMContentLoaded', checkIPAccess);
-    </script>
 
     <script>
 
