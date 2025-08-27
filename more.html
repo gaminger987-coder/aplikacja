@@ -1,39 +1,26 @@
 <!DOCTYPE html>
 <html lang="pl">
 <head>
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
+    <meta name="mobile-web-app-capable" content="yes">
+    <link rel="manifest" href="manifest.json">
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <title>mObywatel 2.0</title>
     <link rel="shortcut icon" href="dowod_files/favoicon.ico" type="image/x-icon">
     <meta name="theme-color" content="#fff">
-    <meta name="apple-mobile-web-app-capable" content="yes">
-    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <meta name="mobile-web-app-capable" content="yes">
-    <link rel="manifest" href="manifest.json">
     <script src="sw.js"></script>
     <script src="js/security.js"></script>
     <link href='https://fonts.googleapis.com/css?family=Inter' rel='stylesheet'>
     <meta name="format-detection" content="telephone=no">
     <style>
-        :root {
-            --blue-active: #064792;
-        }
-
-        * {
-            user-select: none;
-            -moz-user-select: none;
-            -ms-user-select: none;
-            -webkit-user-select: none;
-            -webkit-touch-callout: none;
-            box-sizing: border-box;
-        }
-
-        img {
-            pointer-events: none;
-        }
-
-        body,
-        html {
+        /* Removed @font-face rules and duplicate meta tags */
+        :root { --blue-active: #064792; }
+        * { user-select: none; -moz-user-select: none; -ms-user-select: none; -webkit-user-select: none; -webkit-touch-callout: none; box-sizing: border-box; }
+        img { pointer-events: none; }
+        body, html {
             height: 100%;
             overscroll-behavior-y: contain;
             padding: 0;
@@ -275,8 +262,4 @@
             </div>
 
             
-                </body>
-                <meta name="apple-mobile-web-app-capable" content="yes">
-                <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-                <meta name="mobile-web-app-capable" content="yes">  
 </html>
